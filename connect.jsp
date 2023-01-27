@@ -7,7 +7,7 @@ public class JavaMysqlSelectExample
     try
     {
       // create our mysql database connection
-      String myDriver = "org.gjt.mm.mysql.Driver";
+      String myDriver = "com.mysql.jdbc.Driver";
       String url = "jdbc:mysql://localhost:3306/TestingServers";
       String username = "root";
       String password = "qwerty123";
@@ -73,9 +73,14 @@ public class JavaMysqlSelectExample
         String shelf_44 = rs.getString("shelf_{44}");
         String shelf_45 = rs.getString("shelf_{45}");
         String shelf_46 = rs.getString("shelf_{46}");        
-        
-        
-        // print the results
+        int x = ps.executUpdate();
+        if(x > 0){
+          out.println("Опрос успешен ");
+        }
+        else
+          out.println("Неуспешный запрос ");
+        }
+        // принт результатов
         System.out.format(shelf_1, shelf_2, shelf_3, shelf_4, shelf_5, shelf_6, shelf_7, shelf_8, shelf_9, shelf_10, shelf_11, shelf_12, shelf_13, shelf_14, shelf_15, shelf_16, shelf_17, shelf_18, shelf_19, shelf_20, shelf_21, shelf_22, shelf_23, shelf_24, shelf_25, shelf_26, shelf_27, shelf_28, shelf_29, shelf_30, shelf_31, shelf_32, shelf_33, shelf_34, shelf_35, shelf_36, shelf_37, shelf_38, shelf_39, shelf_40, shelf_41, shelf_42, shelf_43, shelf_44, shelf_45, shelf_46);
       }
       st.close();
