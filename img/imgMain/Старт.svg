@@ -1,0 +1,6 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="100" rx="10" fill="#009406"/>
+<line x1="20" y1="80.2" x2="20" y2="20" stroke="#CACACA" stroke-width="6"/>
+<line x1="30" y1="80.2" x2="30" y2="20" stroke="#CACACA" stroke-width="6"/>
+<path d="M86 50L38 80.3109L38 19.6891L86 50Z" fill="#CACACA"/>
+</svg>
